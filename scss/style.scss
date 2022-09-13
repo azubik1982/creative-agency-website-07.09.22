@@ -8,11 +8,26 @@ html{
     box-sizing: inherit;
 }
 
+h1,h2,h3,h4,h5,h6{
+   margin: 0;
+}
+
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 body{
     min-width: 320px;
     overflow-x: hidden;
+    font-family: 'Roboto-Regular', 'Arial', 'sans-serif';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
 }
 
+// container block start
 .container{
     padding: 0 20px;
 }
@@ -38,7 +53,9 @@ body{
         max-width: 1320px;
     }
 }
+// container block end
 
+// header start
 .header{
     background-color: $accent;
     &__inner{
@@ -92,5 +109,57 @@ body{
 @media (min-width: 1440px) {
     .menu__btn{
         margin-right: 90px;
+    }
+}
+// header end
+
+// slider-head start
+.head{
+    background-image: url(../images/bg-slider.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    block-size: cover;
+    min-height: 193px;
+}
+.top-slider{
+    background: rgba(33, 33, 33, 0.5);
+    &__item{
+        color: #fff;
+        text-align: center;
+        min-height: 193px;
+    }
+    &__title{
+        font-family: 'RobotoCondensed-Regular';
+        line-height: 28px;
+        font-size: 28px;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 36px 0 28px;
+        max-width: 243px; //size for content
+        margin: 0 auto;
+    }
+    .slick-dots{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        .slick-active{
+            button{
+                background-color: transparent;
+                border: 1px solid #476E4D;
+            }
+        }
+        button{
+            font-size: 0;
+            border: none;
+            background-color: $accent;
+            padding: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin: 0 10px;
+        }
     }
 }
