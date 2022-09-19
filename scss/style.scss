@@ -18,6 +18,7 @@ ul,li{
 }
 button{
     padding: 0;
+    cursor: pointer;
 }
 p{
     margin: 0;
@@ -123,7 +124,7 @@ body{
     background-image: url(../images/bg-slider.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    block-size: cover;
+    background-size: cover;
     min-height: 193px;
 }
 @media (min-width: 640px) {
@@ -261,7 +262,7 @@ body{
     }
 
 }
-@media (min-width: 1024x) {
+@media (min-width: 1024px) {
     .top-slider{
         &__item{
             min-height: 618px;
@@ -278,7 +279,7 @@ body{
         }
     }
 }
-@media (min-width: 1440x) {
+@media (min-width: 1440px) {
     .top-slider{
         &__item{
             min-height: 668px;
@@ -295,5 +296,81 @@ body{
             line-height: 26px;
             min-width: 886px;
         }
+        .slick-arrow{
+            width: 70px;
+            height: 70px;
+        }
+        .slick-prev{
+            background-color: $accent;
+            top: calc(50% - 70px);
+        }
+        .slick-next{
+            background-color: $bg-color;
+            bottom: calc(50% - 70px);
+        }
     }
 }
+// section-head end
+
+// section-call start
+.call{
+    background-color: $accent;
+    padding: 40px 0;
+    color: #fff;
+    text-align: center;
+    &__title{
+        @extend %roboto-500;
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+    &__text{
+        // @extend %dosis-300;
+        margin-bottom: 40px;
+    }
+    &__btn{
+        padding: 16px 15px;
+        background-color: $bg-color;
+        color: $accent;
+        @extend %roboto-500;
+        font-size: 18px;
+        border-radius: 3px;
+        border: none;
+        text-transform: uppercase;
+    }
+}
+@media (min-width: 768px) {
+    .call{
+        text-align: left;
+        &__inner{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__box{
+            max-width: 427px;
+        }
+        &__text{
+            margin-bottom: 0;
+        }
+    }
+}
+@media (min-width: 1024px) {
+    .call{
+        &__box{
+            max-width: 695px;
+        }
+    }
+}
+@media (min-width: 1440px) {
+    .call{
+        &__inner{
+            padding: 0 80px;
+        }
+        &__box{
+            max-width: 796px;
+        }
+    }
+}
+
+// section-call end
