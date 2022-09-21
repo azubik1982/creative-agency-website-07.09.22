@@ -123,4 +123,11 @@ body {
   margin: 0 auto;
   left: 0;
   right: 0;
+}
+
+@media (min-width: 640px) {
+  .title {
+    line-height: 48px;
+    font-size: 56px;
+  }
 }/*# sourceMappingURL=global.css.map */

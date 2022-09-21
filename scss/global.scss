@@ -84,4 +84,10 @@ body{
         right: 0;
     }
 }
+@media (min-width: 640px){
+    .title{
+        line-height: 48px;
+        font-size: 56px;
+    }
+}
 // title styles end
