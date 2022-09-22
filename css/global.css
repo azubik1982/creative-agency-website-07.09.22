@@ -130,4 +130,7 @@ body {
     line-height: 48px;
     font-size: 56px;
   }
+  .title::after {
+    width: 100px;
+  }
 }/*# sourceMappingURL=global.css.map */

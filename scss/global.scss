@@ -88,6 +88,9 @@ body{
     .title{
         line-height: 48px;
         font-size: 56px;
+        &::after{
+            width: 100px;
+        }
     }
 }
 // title styles end
