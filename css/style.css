@@ -926,9 +926,12 @@ body {
 .news__title::after {
   background-color: #2B4074;
 }
+.news__items {
+  max-width: 100%;
+  height: auto;
+  justify-content: center;
+}
 .news__item-img {
-  height: 100%;
-  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -778,9 +778,14 @@
            background-color: $accent;
         }
     }
+    &__items{
+        max-width: 100%;
+        height: auto;
+        justify-content: center;
+        }
     &__item-img{
-        height: 100%;
-        width: 100%;
+        // max-width: 100%;
+        // height: auto;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
